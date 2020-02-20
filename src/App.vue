@@ -1,29 +1,40 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <FirstExample/>
+    <ArrayExample/>
+    <HelloWorldD3/>
+    <HelloWorldCircle/>
+    <InlineFunctionDataAccess/>
+    <Cities/>
   </div>
 </template>
+
+<script>
+  import FirstExample from "./components/FirstExample"
+  import ArrayExample from "./components/ArrayExample";
+  import HelloWorldD3 from "./components/HelloWorldD3";
+  import HelloWorldCircle from "./components/HelloWorldCircle";
+  import InlineFunctionDataAccess from "./components/InlineFunctionDataAccess";
+  import Cities from "./components/Cities";
+
+  export default {
+    name: 'app',
+    components: {
+      Cities,
+      InlineFunctionDataAccess,
+      HelloWorldCircle,
+      HelloWorldD3,
+      ArrayExample,
+      FirstExample,
+    }
+  }
+</script>
 
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
