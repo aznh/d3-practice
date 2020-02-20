@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <FirstExample/>
-    <ArrayExample/>
-    <HelloWorldD3/>
-    <HelloWorldCircle/>
-    <InlineFunctionDataAccess/>
-    <Cities/>
+<!--    <FirstExample/>-->
+<!--    <ArrayExample/>-->
+<!--    <HelloWorldD3/>-->
+<!--    <HelloWorldCircle/>-->
+<!--    <InlineFunctionDataAccess/>-->
+<!--    <Cities/>-->
+<!--    <ChartExample/>-->
+<!--    <BoxPlotExample/>-->
+    <LineGraphExample/>
   </div>
 </template>
 
@@ -16,10 +19,16 @@
   import HelloWorldCircle from "./components/HelloWorldCircle";
   import InlineFunctionDataAccess from "./components/InlineFunctionDataAccess";
   import Cities from "./components/Cities";
+  import ChartExample from "./components/ChartExample";
+  import BoxPlotExample from "./components/BoxPlotExample";
+  import LineGraphExample from "./components/LineGraphExample";
 
   export default {
     name: 'app',
     components: {
+      LineGraphExample,
+      BoxPlotExample,
+      ChartExample,
       Cities,
       InlineFunctionDataAccess,
       HelloWorldCircle,
