@@ -8,7 +8,9 @@
 <!--    <Cities/>-->
 <!--    <ChartExample/>-->
 <!--    <BoxPlotExample/>-->
-    <LineGraphExample/>
+<!--    <LineGraphExample/>-->
+<!--    <RoastingGraphExample/>-->
+    <BarGraphExample/>
   </div>
 </template>
 
@@ -22,10 +24,14 @@
   import ChartExample from "./components/ChartExample";
   import BoxPlotExample from "./components/BoxPlotExample";
   import LineGraphExample from "./components/LineGraphExample";
+  // import RoastingGraphExample from "./components/RoastingGraphExample";
+  import BarGraphExample from "./components/BarGraphExample";
 
   export default {
     name: 'app',
     components: {
+      BarGraphExample,
+      // RoastingGraphExample,
       LineGraphExample,
       BoxPlotExample,
       ChartExample,
