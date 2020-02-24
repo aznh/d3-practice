@@ -11,6 +11,7 @@
 <!--    <LineGraphExample/>-->
 <!--    <RoastingGraphExample/>-->
     <BarGraphExample/>
+    <HorizontalBarGraphExample/>
   </div>
 </template>
 
@@ -26,10 +27,12 @@
   import LineGraphExample from "./components/LineGraphExample";
   // import RoastingGraphExample from "./components/RoastingGraphExample";
   import BarGraphExample from "./components/BarGraphExample";
+  import HorizontalBarGraphExample from "./components/HorizontalBarGraphExample";
 
   export default {
     name: 'app',
     components: {
+      HorizontalBarGraphExample,
       BarGraphExample,
       // RoastingGraphExample,
       LineGraphExample,
